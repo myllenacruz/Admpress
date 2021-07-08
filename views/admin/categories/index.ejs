@@ -19,7 +19,7 @@
         <th><%= category.slug %></th>
         <th>
           <button class="btn btn-outline-dark">Editar</button>
-          <form method="POST" action="/categories/delete" class="d-inline">
+          <form method="POST" action="/categories/delete" class="d-inline" onsubmit="confirmDeletion(event, this)">
             <input type="hidden" name="id" value="<%= category.id %>">
             <button class="btn btn-outline-light">Deletar</button>
           </form>
@@ -30,3 +30,4 @@
   </table>
 </div>
 <%- include('../../partials/footer.ejs') %>
+
