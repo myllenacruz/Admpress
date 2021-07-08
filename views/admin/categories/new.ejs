@@ -1,9 +1,14 @@
 <%- include('../../partials/header.ejs') %> <%-
 include('../../partials/navbar.ejs') %>
 <div class="container d-auto justify-content-center text-center mt-5">
-    <h2 class="pb-2">Cadastro de categoria:</h2>
-  <form class="form form-group">
-    <input class="form-control input-sm w-50 mx-auto" type="text" name="title" placeholder="Defina o título" />
+  <h2 class="pb-2">Cadastro de categoria:</h2>
+  <form class="form form-group" method="POST" action="/categories/save">
+    <input
+      class="form-control input-sm w-50 mx-auto"
+      type="text"
+      name="title"
+      placeholder="Defina o título"
+    />
     <button class="btn btn-outline-dark btn-sm col-xs-2 mt-1">Cadastrar</button>
   </form>
 </div>
