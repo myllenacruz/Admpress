@@ -91,12 +91,21 @@ button {
 
 .btn-outline-dark:hover {
   background: #7c78b9 !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .btn-outline-dark {
   border: 1px solid #3e3a74 !important;
-  background: #2c2952 !important;
-  color: #fff !important;
+  background: #7c78b9 !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.btn-outline-light {
+  color: #b1b1b1 !important;
+}
+
+.btn-outline-light:hover {
+  color: #000000 !important;
 }
 
 .table {
@@ -105,4 +114,9 @@ button {
 
 th {
   color: rgb(105, 105, 105);
+}
+
+ul li a {
+  color: #bebebe !important;
+  text-decoration: none !important;
 }
