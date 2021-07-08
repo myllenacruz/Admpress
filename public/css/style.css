@@ -98,3 +98,11 @@ button {
   background: #2c2952 !important;
   color: #fff !important;
 }
+
+.table {
+  color: #525168 !important;
+}
+
+th {
+  color: rgb(105, 105, 105);
+}
