@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #15141B !important;
+  background-color: #15141b !important;
 }
 
 h1 {
@@ -22,7 +22,7 @@ h3 {
 }
 
 h2 {
-  color: #3d3c4d;
+  color: #666481;
 }
 
 a {
@@ -34,7 +34,7 @@ a:hover {
 }
 
 p {
-  color: #c2c2c2
+  color: #c2c2c2;
 }
 
 .navbar-dark {
@@ -64,7 +64,7 @@ form input {
 
 .form-control {
   box-shadow: none !important;
-  text-align:center;
+  text-align: center;
 }
 
 .form-control:focus {
@@ -73,7 +73,7 @@ form input {
 }
 
 textarea {
-  background: #ffffff !important; 
+  background: #ffffff !important;
   max-width: 500px;
   min-height: 80px;
   max-height: 90px;
