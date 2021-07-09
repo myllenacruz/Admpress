@@ -35,7 +35,7 @@ a:hover {
 }
 
 p {
-  color: #c2c2c2;
+  color: #222222;
 }
 
 .navbar-dark {
@@ -50,6 +50,11 @@ p {
 .card-header {
   background: #1b1a22 !important;
   border-bottom: 1px dotted #4c495f !important;
+}
+
+.card-alternative {
+  background: rgb(255, 255, 255) !important;
+  color: #000;
 }
 
 form input {

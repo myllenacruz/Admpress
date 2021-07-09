@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs') %> <%- include('partials/homenavbar.ejs') %>
+<body>
+  <div class="container jumbotron d-auto justify-content-center text-center mt-5" style="background:black !important">
+    <div class="card text-white">
+        <div class="card-header">
+            <h2><%= article.title %></h2>
+        </div>
+        <div class="card-body card-alternative">
+            <%- article.body %>
+        </div>
+    </div>
+  </div>
+</body>
+<%- include('partials/footer.ejs') %>

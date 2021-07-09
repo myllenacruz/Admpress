@@ -6,7 +6,7 @@ const slugify = require('slugify')
 
 router.get('/admin/articles', (req, res) => {
   Article.findAll({
-    include: [{ model: Category }],
+    include: [{ model: Category, required: true }],
   }).then((articles) => {
     res.render('admin/articles/index', { articles: articles })
   })
@@ -16,6 +16,30 @@ router.get('/admin/articles/new', (req, res) => {
   Category.findAll().then((categories) => {
     res.render('admin/articles/new', { categories: categories })
   })
+})
+
+router.get('/admin/articles/edit/:id', (req, res) => {
+  let id = req.params.id
+  if (isNaN(id)) {
+    res.redirect('/')
+  }
+
+  Article.findByPk(id)
+    .then((article) => {
+      if (article != undefined) {
+        Category.findAll().then((categories) => {
+          res.render('admin/articles/edit', {
+            categories: categories,
+            article: article,
+          })
+        })
+      } else {
+        res.redirect('/')
+      }
+    })
+    .catch((erro) => {
+      res.redirect('/')
+    })
 })
 
 router.post('/articles/save', (req, res) => {

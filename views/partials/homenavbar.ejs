@@ -1,12 +1,13 @@
 <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">
-      <img src="" alt="" />
-    </a>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a href="/">Home</a>
-        |
-      </li>
-    </ul>
-  </nav>
-  
+  <a class="navbar-brand" href="/">
+    <img src="" alt="" />
+  </a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a href="/">Home</a>
+      | <% categories.forEach(category => { %>
+      <a href="/"><%= category.title %></a>
+      | <% }) %>
+    </li>
+  </ul>
+</nav>
