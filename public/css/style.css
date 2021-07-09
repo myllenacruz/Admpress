@@ -89,6 +89,15 @@ button {
   margin-bottom: 1.5em !important;
 }
 
+button a {
+  color: #000 !important;
+}
+
+button a:hover {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none !important;
+}
+
 .btn-outline-dark:hover {
   background: #7c78b9 !important;
   color: rgb(255, 255, 255) !important;

@@ -18,7 +18,7 @@
         <th><%= category.title %></th>
         <th><%= category.slug %></th>
         <th>
-          <button class="btn btn-outline-dark">Editar</button>
+          <button class="btn btn-outline-dark"><a href="/admin/categories/edit/<%= category.id %>">Editar</a></button>
           <form method="POST" action="/categories/delete" class="d-inline" onsubmit="confirmDeletion(event, this)">
             <input type="hidden" name="id" value="<%= category.id %>">
             <button class="btn btn-outline-light">Deletar</button>
