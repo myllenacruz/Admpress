@@ -19,9 +19,9 @@
         <th><%= article.title %></th>
         <th><%= article.category.title %></th>
         <th>
-          <button class="btn btn-outline-light">Deletar</button>
           <form method="POST" action="/articles/delete" class="d-inline" onsubmit="confirmDeletion(event, this)">
           <input type="hidden" name="id" value="<%= article.id %>"> 
+          <button class="btn btn-outline-light">Deletar</button>
           </form>
         </th>
       </tr>

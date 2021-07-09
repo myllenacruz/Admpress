@@ -27,6 +27,7 @@ h2 {
 
 a {
   color: rgb(131, 129, 158) !important;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -128,4 +129,8 @@ th {
 ul li a {
   color: #bebebe !important;
   text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none !important;
 }
