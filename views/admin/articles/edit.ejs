@@ -19,7 +19,9 @@
       rows="10"
       class="m-auto form-control"
       placeholder="Escreva aqui"
-    ></textarea>
+      value="<%- article.body %>"
+    >
+    </textarea>
     <h3 class="mt-3">Categoria:</h3>
     <select
       name="category"
@@ -34,7 +36,10 @@
   </form>
 </div>
 
+<div id="content" style="display: none"><%- include.body %></div>
+
 <%- include('../../partials/footer.ejs') %>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   tinymce.init({
     selector: '#article',
