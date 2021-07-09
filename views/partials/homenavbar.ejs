@@ -6,7 +6,7 @@
     <li class="nav-item">
       <a href="/">Home</a>
       | <% categories.forEach(category => { %>
-      <a href="/"><%= category.title %></a>
+      <a href="/category/<%= category.slug %>"><%= category.title %></a>
       | <% }) %>
     </li>
   </ul>
