@@ -9,28 +9,28 @@
       <a href="/<%= article.slug %>"><%= article.title %></a>
     </div>
     <% }) %>
-    <nav>
-      <ul class="pagination justify-content-center mt-5">
-        <li class="page-item">
-          <a class="page-link" href="/" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <% if(result.page > 2) {%>  
-          <li class="page-item active"><a class="page-link" href="/">1</a></li>
-        <% } else if (result.page == 2) {%>
-          <li class="page-item active"><a class="page-link" href="/">1</a></li>
-        <% } %>  
-        <% if(result.next) {%>
-          <li class="page-item active"><a class="page-link" href="/articles/page/<%= result.page + 1 %>">2</a></li>
-        <% } %>
-          <li class="page-item">
-            <a class="page-link" href="/articles/page/2" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-         </li>
-      </ul>
-    </nav>
   </div>
+  <nav>
+    <ul class="pagination justify-content-center mt-5">
+      <li class="page-item">
+        <a class="page-link" href="/" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <% if(result.page > 2) {%>  
+        <li class="page-item active"><a class="page-link" href="/">1</a></li>
+      <% } else if (result.page == 2) {%>
+        <li class="page-item active"><a class="page-link" href="/">1</a></li>
+      <% } %>  
+      <% if(result.next) {%>
+        <li class="page-item active"><a class="page-link" href="/articles/page/<%= result.page + 1 %>">2</a></li>
+      <% } %>
+        <li class="page-item">
+          <a class="page-link" href="/articles/page/2" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+       </li>
+    </ul>
+  </nav>
 </body>
 <%- include('../../partials/footer.ejs') %>
