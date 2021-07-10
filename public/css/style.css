@@ -78,6 +78,10 @@ form input {
   box-shadow: none;
 }
 
+.label2 {
+  color: #b1b1b1 !important;
+}
+
 textarea {
   background: #ffffff !important;
   max-width: 600px;
