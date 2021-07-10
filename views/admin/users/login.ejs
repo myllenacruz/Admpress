@@ -1,0 +1,17 @@
+<%- include('../../partials/header.ejs') %> 
+<%- include('../../partials/navbar.ejs') %>
+
+<div class="container text-center">
+  <div class="container jumbotron col-md-4 d-auto justify-content-center text-center mt-5" style="background: black !important">
+    <h3>Admin</h3>
+    <form action="/authenticate" method="POST">
+      <label class="control-label label2">Usuário</label>
+      <input type="email" name="email" class="form-control text-center mb-3" placeholder="E-mail" />
+      <label class="label2">Senha</label>
+      <input type="password" name="password" class="form-control" />
+      <button type="submit" class="btn btn-outline-light mt-4">Login</button>
+    </form>
+  </div>
+</div>
+
+<%- include('../../partials/footer.ejs') %>

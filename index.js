@@ -16,7 +16,7 @@ app.set('view engine', 'ejs')
 app.use(
   session({
     secret: 'kjkmoc',
-    cookie: { maxAge: 30000 },
+    cookie: { maxAge: 3000000 },
   })
 )
 
